@@ -1,0 +1,114 @@
+ body 
+    {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        user-select: none;
+        background: #ecf0f3;
+    }
+
+    .container 
+    {  
+        background-color: #cbced1;
+        margin-left: 1.8em;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 13px 13px 20px #e9ecef,
+                  -13px -13px 20px #e9ecef; 
+    }
+
+    .result #cal 
+    {
+        margin-bottom: .5em;
+        width: auto;
+        height: 80px;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        text-align: right;
+        padding-right: .5em;
+        background: #ecf0f3;
+        border-radius: 6px;
+        box-shadow: inset 8px 8px 8px #e9ecef,
+                    inset -8px -8px 8px #ffffff;
+    }
+
+    #value 
+    {
+        background-color:rgb(22, 34, 79);
+        color: #fff;
+        box-shadow: inset 5px 5px 8px rgb(22, 34, 79),
+                    inset -5px -5px 8px rgb(22, 34, 79);
+    }
+
+    #value:hover 
+    {
+        background:rgb(16, 66, 38);
+        box-shadow: inset 5px 5px 8px rgb(16, 66, 38),
+                    inset -5px -5px 8px rgb(16, 66, 38);
+
+    }
+
+    .content 
+    {
+        width: 100%;
+        margin-top: 1.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row button 
+    {
+        width: 62px;
+        height: 32px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        margin: 5px;
+        border-radius: 3px;
+        transition: .1s;
+        box-shadow: 5px 5px 8px #00000020,
+                   -5px -5px 8px gainsboro;
+    }
+
+    .row button:hover 
+    {
+        box-shadow:  inset 5px 5px 8px rgba(16, 16, 16, .1),
+                     inset -5px -5px 8px rgba(16, 16, 16, .1);
+        background: #fff;
+    }
+
+    #clear 
+    {
+        background-color: rgb(22, 34, 79);
+        color: #fff;
+    }
+
+    #clear:hover 
+    {
+        background: rgb(58, 58, 157);
+        box-shadow: inset 5px 5px 8px rgb(81, 81, 185),
+                      inset -5px -5px 8px rgb(81, 81, 185);
+    }
+
+    #all_clear
+    {
+        background-color: brown;
+        color: #fff;
+    }
+
+    #all_clear:hover 
+    {
+        box-shadow: inset 5px 5px 8px brown,
+                    inset -5px -5px 8px brown;
+    }
+
+    .bttn
+    {
+        background-color: whitesmoke;
+    }

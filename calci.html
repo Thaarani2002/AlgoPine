@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="result">
+                <input id="cal" type="text" placeholder="0">
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                    <button id="all_clear" onclick="cal.value=''">AC</button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="log()">log</button>
+                    <button class="bttn" style="background-color:rgba(255, 166, 0, 0.062);">(</button>
+                    <button class="bttn" style="background-color:rgba(255, 166, 0, 0.062);">)</button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="percentage()">%</button>
+                    <button id="clear" onclick="backspace()"><i class="bi bi-backspace"></i></button>
+                </div>
+
+                <div class="row">
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="sin()">sin</button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="factorial()">x!</button>
+                    <button class="bttn">7</button>
+                    <button class="bttn">8</button>
+                    <button class="bttn">9</button>
+                    <button class="bttn" style="background-color: orange;">÷</button>
+                </div>
+
+                <div class="row">
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="cos()">cos</button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="exp()">e</button>
+                    <button class="bttn">4</button>
+                    <button class="bttn">5</button>
+                    <button class="bttn">6</button>
+                    <button class="bttn" style="background-color: orange;">×</button>
+                </div>
+
+                <div class="row">
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="tan()">tan</button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="pi()">π</button>
+                    <button class="bttn">1</button>
+                    <button class="bttn">2</button>
+                    <button class="bttn">3</button>
+                    <button class="bttn" style="background-color: orange;">-</button>
+                </div>
+
+                <div class="row">
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="power()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span></button>
+                    <button style="background-color:rgba(255, 166, 0, 0.062);" onclick="sqrt()">√</button>
+                    <button class="bttn">0</button>
+                    <button class="bttn">.</button>
+                    <button id="value" onclick="cal.value=eval(cal.value)">=</button>
+                    <button class="bttn" style="background-color: orange;">+</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+
+</html>
